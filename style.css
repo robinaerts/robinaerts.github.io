@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111111;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.app {
+    color: rgb(209, 209, 209);
+    text-decoration: none;
+}
+
+.title {
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    color: #efba13;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    padding: 0 5rem;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.app-inner {
+    width: 13rem;
+    height: 15rem;
+    background-color: rgb(53, 54, 58);
+    border-radius: 10px;
+    margin-bottom: 4rem;
+    transition: all 200ms ease-in-out;
+}
+
+.app-inner:hover {
+    transform: scale(1.03);
+}
+
+.project-title {
+    position: relative;
+    text-align: center;
+    top: -2.5rem;
+}
+
+@media only screen and (max-width: 500px) {
+   .project-container {
+    flex-direction: column;
+    justify-content: start;
+    margin-bottom: 10vh;
+   }
+}
