@@ -26,7 +26,7 @@ const apps = [
   },
   {
     name: "Solar Discover",
-    url: "https://solar-discover.vercel.app",
+    url: "/solardiscover",
     image: "./images/solar.jpg",
   },
   {
