@@ -29,6 +29,26 @@ const apps = [
     url: "https://solar-discover.vercel.app",
     image: "./images/solar.jpg",
   },
+  {
+    name: "Galaxy Generator",
+    url: "/galaxygenerator",
+    image: "./images/galaxygenerator.jpg",
+  },
+  {
+    name: "Floating Name",
+    url: "/floatingname",
+    image: "./images/floatingname.jpg",
+  },
+  {
+    name: "Second Portfolio",
+    url: "/oldportfolio",
+    image: "./images/oldportfolio.jfif",
+  },
+  {
+    name: "First Portfolio",
+    url: "/firstportfolio",
+    image: "./images/firstportfolio.jfif",
+  },
 ];
 
 const projectContainer = document.querySelector(".project-container");
