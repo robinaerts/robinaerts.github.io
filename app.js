@@ -1,4 +1,4 @@
-const apps = [
+const webapps = [
   {
     name: "Tic Tac Toe",
     url: "/tictactoe",
@@ -51,9 +51,37 @@ const apps = [
   },
 ];
 
-const projectContainer = document.querySelector(".project-container");
+const desktopapps = [
+  {
+    name: "Snake",
+    url: "/snake",
+    image: "./images/snake.png",
+  },
 
-apps.forEach((app) => {
+  // {
+  //   name: "Key Simulator",
+  //   url: "/keysimulator",
+  //   image: "./images/keysimulator.png",
+  // },
+];
+
+const mobileApps = [
+  {
+    name: "MovieFinder",
+    url: "https://moviefinder-fe7dc.web.app",
+    image: "./images/moviefinder.jpg",
+  },
+];
+
+const cltapps = [
+  {
+    name: "Make Project",
+    url: "/makeproject",
+    image: "./images/makeproject.png",
+  },
+];
+
+const addApp = (app, container) => {
   const appElement = document.createElement("a");
   appElement.href = app.url;
   appElement.classList.add("app");
@@ -64,5 +92,26 @@ apps.forEach((app) => {
   innerDiv.innerHTML = "<h3 class='project-title'>" + app.name + "</h3>";
   appElement.appendChild(innerDiv);
 
-  projectContainer.appendChild(appElement);
+  container.appendChild(appElement);
+};
+
+const webContainer = document.querySelector(".web-container");
+const desktopContainer = document.querySelector(".desktop-container");
+const mobileContainer = document.querySelector(".mobile-container");
+const cltContainer = document.querySelector(".clt-container");
+
+webapps.forEach((app) => {
+  addApp(app, webContainer);
+});
+
+desktopapps.forEach((app) => {
+  addApp(app, desktopContainer);
+});
+
+mobileApps.forEach((app) => {
+  addApp(app, mobileContainer);
+});
+
+cltapps.forEach((app) => {
+  addApp(app, cltContainer);
 });
