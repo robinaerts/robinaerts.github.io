@@ -6,7 +6,7 @@ const webapps = [
   },
   {
     name: "FamilyPlanner",
-    url: "https://familyplanner.ga",
+    url: "https://familyplanner-delta.vercel.app",
     image: "./images/fp.jpg",
   },
   {
